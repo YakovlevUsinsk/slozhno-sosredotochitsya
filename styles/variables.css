@@ -2,3 +2,11 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --font-family: 'IBM Plex Mono';
+  --font-size-text: 18px;
+  --font-size-subheader: 18px;
+  --color-text: #ffc2e6;
+  --color-shadow: #ff0070;
+}
