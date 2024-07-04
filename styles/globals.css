@@ -9,6 +9,7 @@
 body {
   font-family: var(--font-family), sans-serif;
   font-size: var(--font-size-text, 18px);
+  color: var(--color-text, #353430);
   min-inline-size: 375px;
   max-inline-size: 1024px;
   margin: 0 auto;
@@ -65,8 +66,8 @@ a {
   content: '';
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid #353430;
-  border-block-end: 1px solid #353430;
+  border-inline-start: 1px solid var(--color-decor-line);
+  border-block-end: 1px solid var(--color-decor-line);
   position: absolute;
   inset-inline-start: 20px;
   inset-block-end: 20px;
@@ -76,8 +77,8 @@ a {
   content: '';
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid #353430;
-  border-block-start: 1px solid #353430;
+  border-inline-end: 1px solid var(--color-decor-line);
+  border-block-start: 1px solid var(--color-decor-line);
   position: absolute;
   inset-inline-end: 20px;
   inset-block-start: 20px;
@@ -95,7 +96,7 @@ a {
 
 .title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  color: var(--color-text);
+  color: var(--color-text-title);
   text-shadow: 4px 4px var(--color-shadow);
 }
 
@@ -109,7 +110,7 @@ a {
   align-self: start;
   margin-block-start: 77px;
   margin-inline-end: 20px;
-  background-color: #ff8dcb;
+  background-color: var(--color-background-subtitle);
 }
 
 .content {
@@ -128,11 +129,9 @@ a {
 }
 
 .text-content_horizont {
-  --display: flex;
-  display: var(--display);
+  display: flex;
   flex-direction: column;
   row-gap: 20px;
-  container-type: normal;
 }
 
 .text-content__header {
@@ -215,11 +214,11 @@ a {
   align-items: center;
 }
 
-@container style(--display: flex) {
+@container horizont style(--display: flex) {
 
-  .text-content__header {
+  /* .text-content__header {
     max-inline-size: 315px;
-  }
+  } */
 
   .text-block {
     display: grid;
