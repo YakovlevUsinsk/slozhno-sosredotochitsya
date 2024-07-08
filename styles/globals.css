@@ -52,6 +52,10 @@ a {
   background-attachment: fixed;
 }
 
+.page__content {
+  margin: 60px auto 0;
+}
+
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -116,16 +120,16 @@ a {
   }
 
   &&:hover {
-    border: 1px solid #353430;
+    border: 1px solid var(--color-style-button, #353430);
   }
 
   &&:focus-visible {
-    border-block-end: 1px solid #353430;
+    border-block-end: 1px solid var(--color-style-button, #353430);
   }
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid #353430;
+  border: 1px solid var(--color-style-button, #353430);
 }
 
 .title {
@@ -148,15 +152,13 @@ a {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-block-start: 60px;
+  display: grid;
+  /* grid-template-columns: calc(100vw - 40px); */
+  justify-content: center;
   row-gap: 80px;
 }
 
 .text-content {
-  inline-size: calc(100% - (20px * 2));
   display: grid;
   grid-template-columns: repeat(
     3,
@@ -207,6 +209,7 @@ a {
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
+  background-color: var(--color-background-subtitle, #ff8dcb);
 }
 
 .text {
@@ -225,12 +228,12 @@ a {
   }
 
   &&:focus-visible {
-    outline: 1px solid #353430;
+    outline: 1px solid var(--color-style-link, #353430);
     outline-width: 2px;
   }
 
   &&:hover {
-    border-block-end: 1px solid #353430;
+    border-block-end: 1px solid var(--color-style-link, #353430);
   }
 }
 
@@ -265,8 +268,8 @@ a {
 }
 
 .image {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
 }
 
@@ -310,7 +313,6 @@ a {
   .text-content {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
-    justify-content: space-between;
   }
 
   .text-block {
@@ -322,7 +324,7 @@ a {
   }
 
   .image-list {
-    inline-size: clamp(728px, 96vw, 984px);
+    inline-size: 100%;
     min-block-size: 780px;
     gap: 20px;
     justify-content: center;
@@ -377,13 +379,13 @@ a {
   }
 
   .content {
+    grid-template-columns: calc(100vw - 20px);
     padding-block-start: 40px;
     row-gap: 50px;
     margin-block-start: 0;
   }
 
   .text-content {
-    inline-size: calc(100% - (10px * 2));
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
@@ -396,6 +398,10 @@ a {
     row-gap: 20px;
     list-style-type: none;
     grid-column: span 1;
+  }
+
+  .text-block-title {
+    inline-size: 100%;
   }
 
   .text-content_row {
