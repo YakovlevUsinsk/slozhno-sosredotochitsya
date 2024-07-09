@@ -198,7 +198,7 @@ a {
   justify-content: space-between;
 }
 
-.text-content_row {
+.text-content_answer-block {
   display: flex;
   row-gap: 20px;
   flex-direction: column;
@@ -212,7 +212,7 @@ a {
   color: var(--color-text-content-header);
 }
 
-.text-block {
+.wrapper-block {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -220,11 +220,11 @@ a {
   grid-column: 2 / 4;
 }
 
-.text-content_row > .text-content__header {
+.text-content_answer-block > .text-content__header {
   max-inline-size: calc((315 / 984) * 100%);
 }
 
-.text-content_row > .text-block {
+.text-content_answer-block > .wrapper-block {
   display: grid;
   grid-template-columns: repeat(3, calc((315 / 984) * 100%));
   justify-content: space-between;
@@ -291,11 +291,11 @@ a {
   block-size: 100%;
 }
 
-.image-item_span-inl2 {
+.image-item_landscape-block {
   grid-column: span 2;
 }
 
-.image-item_span-blck2 {
+.image-item_portrait-block {
   grid-row: span 2;
 }
 
@@ -354,11 +354,11 @@ a {
     column-gap: 20px;
   }
 
-  .text-block {
+  .wrapper-block {
     grid-column: 2;
   }
 
-  .text-content_row > .text-block {
+  .text-content_answer-block > .wrapper-block {
     grid-template-columns: 1fr;
   }
 
@@ -431,7 +431,7 @@ a {
     justify-content: center;
   }
 
-  .text-block {
+  .wrapper-block {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -443,19 +443,19 @@ a {
     inline-size: 100%;
   }
 
-  .text-content_row {
+  .text-content_answer-block {
     display: flex;
     row-gap: 20px;
     flex-direction: column;
   }
 
-  .text-content_row > .text-block {
+  .text-content_answer-block > .wrapper-block {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
   }
 
-  .text-content_row > .text-content__header {
+  .text-content_answer-block > .text-content__header {
     max-inline-size: 100%;
   }
 
@@ -475,11 +475,11 @@ a {
     justify-content: center;
   }
 
-  .image-item_span-inl2 {
+  .image-item_landscape-block {
     grid-column: span 1;
   }
 
-  .image-item_span-blck2 {
+  .image-item_portrait-block {
     grid-row: span 1;
   }
 
