@@ -15,11 +15,13 @@
   --color-text: #353430;
   --color-text-title: #ffc2e6;
   --color-shadow: #ff0070;
+  --color-shadow-light: #ff8dcb;
   --color-decor-line: #353430;
   --color-background-subtitle: #ff8dcb;
-  --color-style-button: #353430;
+  --color-style-button: #32312d66;
   --color-style-link: #353430;
   --color-link-shadow: #ff8dcb;
   --color-header-text: #353430;
   --color-text-content-header: #353430;
+  --color-text-block-title: #353430;
 }
