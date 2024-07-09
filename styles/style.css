@@ -314,6 +314,13 @@ a {
   align-items: center;
 }
 
+@media (width >= 1024px) {
+
+  .content {
+    grid-template-columns: 984px;
+  }
+}
+
 @media (768px <= width < 1024px) {
 
   .header {
