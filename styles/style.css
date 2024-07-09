@@ -184,7 +184,7 @@ a {
 
 .content {
   display: grid;
-  /* grid-template-columns: calc(100vw - 40px); */
+  grid-template-columns: calc(100vw - 40px);
   justify-content: center;
   row-gap: 80px;
 }
