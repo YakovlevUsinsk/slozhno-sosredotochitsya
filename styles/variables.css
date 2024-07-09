@@ -8,14 +8,18 @@
   --font-family-button: 'IBM Plex Mono';
   --font-size-text: 18px;
   --font-size-button: 18px;
-  --color-text: #353430;
-  --color-link-shadow: #ff8dcb;
   --font-size-subheader: 18px;
+  --decor-margin-border: 20px;
+  --background-image-url: url(./../images/cover-image-light.png);
+  --display-status: none;
+  --color-text: #353430;
   --color-text-title: #ffc2e6;
   --color-shadow: #ff0070;
   --color-decor-line: #353430;
   --color-background-subtitle: #ff8dcb;
-  --decor-margin-border: 20px;
   --color-style-button: #353430;
   --color-style-link: #353430;
+  --color-link-shadow: #ff8dcb;
+  --color-header-text: #353430;
+  --color-text-content-header: #353430;
 }
